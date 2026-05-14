@@ -99,3 +99,64 @@ nav a:hover {
 .card button:hover {
   background-color: #cc0000;
 }
+
+.sobre {
+  padding: 40px;
+}
+
+.sobre-banner {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sobre-banner h2 {
+  font-size: 40px;
+  color: #ff3131;
+  margin-bottom: 15px;
+}
+
+.sobre-banner p {
+  color: #ccc;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.sobre-conteudo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobre-card {
+  background-color: #1c1c1c;
+  padding: 25px;
+  width: 320px;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.sobre-card:hover {
+  transform: translateY(-10px);
+}
+
+.sobre-card h3 {
+  color: #ff3131;
+  margin-bottom: 15px;
+}
+
+.sobre-card p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.sobre-card ul {
+  padding-left: 20px;
+  color: #ccc;
+}
+
+.sobre-card li {
+  margin-bottom: 10px;
+}
