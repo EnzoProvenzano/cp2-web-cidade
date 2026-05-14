@@ -2,31 +2,31 @@ const produtos = [
   {
     nome: "Homem-Aranha",
     preco: 299.90,
-    imagem: "https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?q=80&w=800&auto=format&fit=crop"
+    imagem: "./src/assets/img/homem-aranha.jpg"
   },
 
   {
     nome: "Batman",
     preco: 349.90,
-    imagem: "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=800&auto=format&fit=crop"
+    imagem: "./src/assets/img/batman.jpg"
   },
 
   {
     nome: "Capitão América",
     preco: 279.90,
-    imagem: "https://images.unsplash.com/photo-1624213111452-35e8d3d5cc18?q=80&w=800&auto=format&fit=crop"
+    imagem: "./src/assets/img/capitao.jpg"
   },
 
   {
     nome: "Goku",
     preco: 399.90,
-    imagem: "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop"
+    imagem: "./src/assets/img/goku.jpg"
   },
 
   {
     nome: "Homem de Ferro",
     preco: 459.90,
-    imagem: "https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=800&auto=format&fit=crop"
+    imagem: "./src/assets/img/h-ferro.png"
   }
 ];
 
