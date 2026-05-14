@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Action Figures Store</title>
-
-  <link rel="stylesheet" href="./src/css/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ActionVerse — As melhores action figures do mercado." />
+  <title>ActionVerse — Action Figures</title>
+  <link rel="stylesheet" href="src/css/estilo.css" />
 </head>
 <body>
 
   <header>
-    <h1>Action Figures Store</h1>
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+      <div class="navbar__container">
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="./pages/loja.html">Loja</a>
-      <a href="./pages/sobre.html">Sobre</a>
+        <a href="index.html" class="navbar__logo" aria-label="ActionVerse — Página inicial">
+          <span class="logo-icon" aria-hidden="true">⚡</span>
+          <span class="logo-text">Action<span>Verse</span></span>
+        </a>
+
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"        class="navbar__link active">Início</a></li>
+          <li><a href="pages/sobre.html"  class="navbar__link">Sobre</a></li>
+          <li>
+            <a href="pages/loja.html" class="navbar__cart-btn" aria-label="Ver carrinho">
+              🛒 <span>Carrinho</span>
+              <span class="cart-badge" id="cart-badge" style="display:none;">0</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="produtos">
 
-      <div id="cards-container"></div>
+    <section class="hero" aria-label="Destaque principal">
+      <div class="hero__container">
+        <p class="hero__eyebrow">Coleções Exclusivas · 100% Originais</p>
 
+        <h1 class="hero__title">
+          Seu herói favorito
+          <span class="highlight">ao seu alcance</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Marvel, DC, Star Wars, Dragon Ball e muito mais.
+          Peças colecionáveis para quem vive a cultura geek.
+        </p>
+
+        <a href="pages/loja.html" class="hero__cta">
+          🛒 Ver Carrinho
+        </a>
+      </div>
     </section>
+
+    <section class="section" id="produtos" aria-label="Produtos em destaque">
+      <div class="section__container">
+
+        <header class="section__header">
+          <p class="section__eyebrow">Destaques da Semana</p>
+          <h2 class="section__title">Produtos em Destaque</h2>
+          <div class="section__divider" role="presentation"></div>
+        </header>
+
+        <div
+          class="products-grid"
+          id="products-container"
+          role="list"
+          aria-label="Lista de produtos"
+        ></div>
+
+      </div>
+    </section>
+
   </main>
 
-  <script src="./src/js/script.js"></script>
+  <footer>
+    <div class="footer__container">
+      <p class="footer__logo">Action<span>Verse</span></p>
+      <p class="footer__text">© 2025 ActionVerse · Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
+  <script src="src/js/script.js"></script>
 </body>
 </html>

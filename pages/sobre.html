@@ -1,76 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Sobre</title>
-
-  <link rel="stylesheet" href="../src/css/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conheça a história da ActionVerse, sua loja especializada em action figures." />
+  <title>Sobre Nós — ActionVerse</title>
+  <link rel="stylesheet" href="../src/css/estilo.css" />
 </head>
 <body>
 
   <header>
-    <h1>Action Figures Store</h1>
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+      <div class="navbar__container">
 
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="./loja.html">Loja</a>
-      <a href="./sobre.html">Sobre</a>
+        <a href="../index.html" class="navbar__logo" aria-label="ActionVerse — Página inicial">
+          <span class="logo-icon" aria-hidden="true">⚡</span>
+          <span class="logo-text">Action<span>Verse</span></span>
+        </a>
+
+        <ul class="navbar__nav" role="list">
+          <li><a href="../index.html"  class="navbar__link">Início</a></li>
+          <li><a href="sobre.html"     class="navbar__link active">Sobre</a></li>
+          <li>
+            <a href="loja.html" class="navbar__cart-btn" aria-label="Ver carrinho">
+              🛒 <span>Carrinho</span>
+              <span class="cart-badge" id="cart-badge" style="display:none;">0</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </nav>
   </header>
 
-  <main class="sobre">
+  <main>
 
-    <section class="sobre-banner">
-      <h2>O Universo dos Colecionáveis</h2>
-
-      <p>
-        Mais do que uma loja, somos apaixonados pela cultura geek, action figures
-        e personagens que marcaram gerações.
-      </p>
+    <section class="page-hero" aria-label="Cabeçalho da página">
+      <h1 class="page-hero__title">Nossa História</h1>
+      <nav class="page-hero__breadcrumb" aria-label="Trilha de navegação">
+        <a href="../index.html">Início</a> › Sobre
+      </nav>
     </section>
 
-    <section class="sobre-conteudo">
+    <article class="about-section">
 
-      <div class="sobre-card">
-        <h3>Nossa História</h3>
-
-        <p>
-          A Action Figures Store nasceu com o objetivo de conectar fãs e colecionadores
-          aos personagens mais icônicos do cinema, games, séries e animes.
+      <header class="about-hero">
+        <h2 class="about-hero__title">
+          Somos a <span>ActionVerse</span>
+        </h2>
+        <p class="about-hero__lead">
+          Nascemos da paixão por super-heróis, vilões icônicos e personagens lendários.
+          Somos mais do que uma loja — somos um portal para o universo das action figures.
         </p>
+      </header>
 
-        <p>
-          Trabalhamos com produtos inspirados em universos que marcaram milhões
-          de pessoas ao redor do mundo.
-        </p>
-      </div>
+      <section aria-label="Linha do tempo da empresa">
+        <ol class="about-timeline">
 
-      <div class="sobre-card">
-        <h3>Nossa Missão</h3>
+          <li class="timeline-item">
+            <div class="timeline-item__dot" aria-hidden="true">
+              <span class="dot-emoji">🚀</span>
+              <small class="dot-year">2015</small>
+            </div>
+            <div class="timeline-item__content">
+              <h3 class="timeline-item__title">O Início</h3>
+              <p class="timeline-item__text">
+                A ActionVerse nasceu em 2015 numa garagem em São Paulo, quando dois fãs
+                incondicionais de quadrinhos decidiram transformar a paixão em negócio.
+                Com apenas 30 produtos no estoque e um site simples, começamos a vender
+                para colecionadores da região.
+              </p>
+            </div>
+          </li>
 
-        <p>
-          Proporcionar uma experiência única para colecionadores, oferecendo produtos
-          de qualidade, atendimento diferenciado e um catálogo pensado para fãs da cultura geek.
-        </p>
-      </div>
+          <li class="timeline-item">
+            <div class="timeline-item__dot" aria-hidden="true">
+              <span class="dot-emoji">📦</span>
+              <small class="dot-year">2018</small>
+            </div>
+            <div class="timeline-item__content">
+              <h3 class="timeline-item__title">Crescimento Nacional</h3>
+              <p class="timeline-item__text">
+                Em 2018 expandimos para todo o Brasil com entrega nacional. Firmamos parcerias
+                com distribuidores oficiais da Marvel, DC e Hasbro, garantindo produtos 100%
+                originais e licenciados. Nosso catálogo cresceu para mais de 500 itens.
+              </p>
+            </div>
+          </li>
 
-      <div class="sobre-card">
-        <h3>Diferenciais</h3>
+          <li class="timeline-item">
+            <div class="timeline-item__dot" aria-hidden="true">
+              <span class="dot-emoji">🏪</span>
+              <small class="dot-year">2021</small>
+            </div>
+            <div class="timeline-item__content">
+              <h3 class="timeline-item__title">Loja Física</h3>
+              <p class="timeline-item__text">
+                Inauguramos nossa primeira loja física no Shopping Anália Franco, em São Paulo.
+                Um espaço imersivo onde fãs podem interagir com as figuras antes de comprar.
+                Realizamos eventos de lançamento e sessões de autógrafo com artistas de quadrinhos.
+              </p>
+            </div>
+          </li>
 
-        <ul>
-          <li>Produtos exclusivos</li>
-          <li>Action figures premium</li>
-          <li>Entrega segura</li>
-          <li>Atendimento especializado</li>
-          <li>Catálogo geek atualizado</li>
+          <li class="timeline-item">
+            <div class="timeline-item__dot" aria-hidden="true">
+              <span class="dot-emoji">🎯</span>
+              <small class="dot-year">2025</small>
+            </div>
+            <div class="timeline-item__content">
+              <h3 class="timeline-item__title">Hoje</h3>
+              <p class="timeline-item__text">
+                Hoje somos referência nacional em action figures, com mais de 2.000 produtos,
+                50.000 clientes satisfeitos e presença em 5 estados. Seguimos com a mesma paixão
+                do início: conectar fãs aos seus heróis favoritos.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+      <section class="about-values" aria-label="Nossos valores">
+        <h2 class="about-values__title">Nossos Valores</h2>
+
+        <ul class="values-grid">
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">🎖️</div>
+            <h3 class="value-card__title">Autenticidade</h3>
+            <p class="value-card__text">Trabalhamos apenas com produtos originais e licenciados oficialmente.</p>
+          </li>
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">❤️</div>
+            <h3 class="value-card__title">Paixão</h3>
+            <p class="value-card__text">Somos fãs antes de tudo. Essa paixão está em cada detalhe do atendimento.</p>
+          </li>
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">🤝</div>
+            <h3 class="value-card__title">Comunidade</h3>
+            <p class="value-card__text">Construímos uma comunidade de colecionadores que compartilham a mesma paixão.</p>
+          </li>
+          <li class="value-card">
+            <div class="value-card__icon" aria-hidden="true">⚡</div>
+            <h3 class="value-card__title">Qualidade</h3>
+            <p class="value-card__text">Selecionamos cada produto com rigor para oferecer o melhor aos colecionadores.</p>
+          </li>
         </ul>
-      </div>
+      </section>
 
-    </section>
-
+    </article>
   </main>
 
+  <footer>
+    <div class="footer__container">
+      <p class="footer__logo">Action<span>Verse</span></p>
+      <p class="footer__text">© 2025 ActionVerse · Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
 </body>
 </html>
