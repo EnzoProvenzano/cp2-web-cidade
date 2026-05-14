@@ -160,3 +160,69 @@ nav a:hover {
 .sobre-card li {
   margin-bottom: 10px;
 }
+
+.loja {
+  padding: 40px;
+}
+
+.loja h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff3131;
+}
+
+.item-carrinho {
+  background-color: #1c1c1c;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resumo-compra {
+  margin-top: 40px;
+
+  background-color: #1c1c1c;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.resumo-compra h3 {
+  margin-bottom: 15px;
+}
+
+#total-compra {
+  display: block;
+
+  font-size: 32px;
+  color: #ff3131;
+
+  margin-bottom: 20px;
+}
+
+#btn-desconto {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #ff3131;
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+#btn-desconto:hover {
+  background-color: #cc0000;
+}
